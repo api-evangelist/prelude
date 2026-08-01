@@ -1,0 +1,39 @@
+# originhq Documentation
+
+> Documentation for originhq
+
+## Guides
+- [Welcome to Origin](https://support.originhq.com/docs/welcome-to-origin.md): Origin is an endpoint AI observability platform that inventories, observes, and measures the usage of AI agents at scale, giving stakeholders the necessary operational intelligence into the state of AI in their organization. This observability is the foundation for everything from making defensible investments in AI to maximizing its adoption and efficiency without compromising the safety of your organization.
+- [What is Origin?](https://support.originhq.com/docs/what-is-origin.md): Endpoint AI Observability
+- [Supported AI Providers](https://support.originhq.com/docs/supported-ai-providers.md)
+- [Claude Enterprise](https://support.originhq.com/docs/claude-enterprise.md)
+- [Microsoft 365 Copilot](https://support.originhq.com/docs/microsoft-365-copilot.md)
+- [Prerequisites & Compatability](https://support.originhq.com/docs/prerequisites-and-known-issues.md)
+- [How to use Origin](https://support.originhq.com/docs/how-to-use-origin.md)
+- [Initial Setup](https://support.originhq.com/docs/origin-console-setup.md): Initial setup is completed using the settings icon on the left hand nav.  https://dashboard.originhq.com/settings
+- [Role Based Access Control](https://support.originhq.com/docs/role-based-access-control.md)
+- [Endpoint Explorer](https://support.originhq.com/docs/endpoint-explorer.md)
+- [Activity Clustering](https://support.originhq.com/docs/activity-clustering.md): The activity clustering is located at https://dashboard.originhq.com/clusters
+- [Chat Interface](https://support.originhq.com/docs/chat-interface.md)
+- [Registered Endpoints](https://support.originhq.com/docs/registered-endpoints.md)
+- [Report Issues](https://support.originhq.com/docs/report-issues.md)
+- [Origin MCP Server](https://support.originhq.com/docs/origin-mcp-server.md)
+- [Identity Integration](https://support.originhq.com/docs/identity-integration.md): Setup of identity integrations is available in the dashboard at https://dashboard.originhq.com/directory
+- [Microsoft Entra ID](https://support.originhq.com/docs/entra-id-setup.md)
+- [Google ID](https://support.originhq.com/docs/google-id-setup.md)
+- [Okta](https://support.originhq.com/docs/okta-setup.md)
+- [Origin Agent Installation](https://support.originhq.com/docs/origin-agent-installation.md)
+- [macOS Agent Installation](https://support.originhq.com/docs/macos-agent-installation.md)
+- [macOS Agent Uninstall](https://support.originhq.com/docs/macos-agent-uninstall.md)
+- [Windows Agent Installation](https://support.originhq.com/docs/windows-agent-installation.md)
+- [Windows Agent Uninstall](https://support.originhq.com/docs/windows-agent-uninstall.md)
+- [Verifying Agent Installations](https://support.originhq.com/docs/verifying-agent-installations.md)
+- [MDM Deployment Guides](https://support.originhq.com/docs/mdm-deployment-guides.md)
+- [Intune Deployment (Windows agent)](https://support.originhq.com/docs/windows-via-intune.md)
+- [InTune Deployment (macOS agent)](https://support.originhq.com/docs/macos-via-intune.md)
+- [Jamf Deplopyment (macOS)](https://support.originhq.com/docs/macos-via-jamf.md)
+- [Tanium Deployment (MacOs agent)](https://support.originhq.com/docs/tanium-deployment-macos-agent.md)
+- [Agent Installation Issues](https://support.originhq.com/docs/agent-installation-issues.md)
+- [Origin agent fails to install - error -1073741515 Undefined](https://support.originhq.com/docs/origin-agent-fails-to-install-error-1073741515.md)
+- [Troubleshooting Network Connectivity](https://support.originhq.com/docs/troubleshooting-network-connectivity.md)
+- [macOS agent installs but no AI events are captured](https://support.originhq.com/docs/macos-agent-installs-but-no-ai-events-are-captured.md)

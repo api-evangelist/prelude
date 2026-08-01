@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.originhq.com/changelog
+scheme: calver-plus-semver
+current_version: v1.7.4
+entries:
+- version: v1.7.4
+  date: '2026-07-17'
+  breaking: false
+  highlights:
+  - Directory integrations now GA for Microsoft Entra, Google Workspace and Okta; brings people,
+    groups and organization details into the graph.
+- version: v1.6.7
+  date: '2026-07-02'
+  breaking: false
+  highlights:
+  - Introduced deterministic security signals.
+  - Role-based access control with granular permissions replaces all-or-nothing member access.
+- version: v1.5.15
+  date: '2026-06-12'
+  breaking: false
+  highlights:
+  - Launched proxy-less agent for collecting AI activity without placing anything in the network path.
+- version: v1.4.4
+  date: '2026-06-09'
+  breaking: false
+  highlights:
+  - Added configurable auto-update policies so IT teams can keep selected orgs on their own agent
+    rollout schedule.

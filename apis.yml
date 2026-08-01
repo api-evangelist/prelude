@@ -1,8 +1,30 @@
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 10
+  pass: local-v1
 aid: prelude
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/prelude.png
 name: Prelude
-description: 'Prelude is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Prelude Security is now Origin, an endpoint AI observability platform that inventories,
+  observes, and measures the use of AI agents and Model Context Protocol (MCP) servers across an
+  enterprise fleet. Deployed as a lightweight endpoint agent, Origin gives security and IT teams
+  discovery of sanctioned and unsanctioned agents and MCP servers, security visibility into agent
+  prompts, tool calls, file access and network activity, and spend tracking across models and teams.
+  Origin also publishes a hosted, OAuth 2.1-secured MCP server that lets agents query endpoint and
+  agent observability data in natural language. Backed by Insight Partners.'
 url: https://raw.githubusercontent.com/api-evangelist/prelude/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,13 +32,38 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-rebrand:
+  former_name: Prelude Security
+  current_name: Origin
+  current_domain: originhq.com
+  note: preludesecurity.com 301-redirects to originhq.com/preludesecurity
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Cybersecurity
-apis: []
+- AI Security
+- AI Observability
+- Endpoint Security
+- AI Agents
+- Model Context Protocol
+- MCP
+- Insight Partners
+apis:
+- name: Origin Analytics MCP Server
+  description: 'Hosted, OAuth 2.1-secured Model Context Protocol server that lets agents run
+    read-only structured queries against a tenant''s endpoint and agent observability data
+    (schema discovery + analytics query), constrained by the caller''s Origin dashboard role.'
+  humanURL: https://support.originhq.com/docs/origin-mcp-server
+  baseURL: https://mcp.prod.originhq.com/mcp
+  properties:
+  - type: MCPServer
+    url: mcp/prelude-mcp.yml
+  - type: Documentation
+    url: https://support.originhq.com/docs/origin-mcp-server
+  - type: Authentication
+    url: authentication/prelude-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -24,4 +71,40 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.preludesecurity.com/
+  url: https://www.originhq.com/
+- type: DeveloperPortal
+  url: https://support.originhq.com
+- type: Documentation
+  url: https://support.originhq.com
+- type: GettingStarted
+  url: https://support.originhq.com/docs/welcome-to-origin
+- type: Support
+  url: https://support.originhq.com
+- type: Blog
+  url: https://www.originhq.com/blog
+- type: ChangeLog
+  url: https://www.originhq.com/changelog
+- type: Pricing
+  url: https://www.originhq.com/pricing
+- type: Login
+  url: https://dashboard.originhq.com
+- type: TermsOfService
+  url: https://www.originhq.com/legal/service-terms
+- type: Compliance
+  url: https://www.originhq.com/legal/service-terms
+- type: MCPServer
+  url: mcp/prelude-mcp.yml
+- type: LLMsTxt
+  url: llms/prelude-llms.txt
+- type: WellKnown
+  url: well-known/prelude-well-known.yml
+- type: Authentication
+  url: authentication/prelude-authentication.yml
+- type: Lifecycle
+  url: lifecycle/prelude-lifecycle.yml
+- type: ChangeLog
+  url: changelog/prelude-changelog.yml
+- type: Conformance
+  url: conformance/prelude-conformance.yml
+- type: DomainSecurity
+  url: security/prelude-domain-security.yml

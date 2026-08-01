@@ -1,0 +1,18 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.originhq.com/changelog
+versioning:
+  scheme: calver-plus-semver
+  detail: Dated changelog entries paired with a semantic product version (v#.#.#)
+  current: v1.7.4
+  current_date: '2026-07-17'
+  docs: https://www.originhq.com/changelog
+sla:
+  url: https://www.originhq.com/legal/sla
+  name: Service Level Standards
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: No public deprecation policy or RFC 8594 Sunset/Deprecation header support found.
+status_page: null
+status_page_note: No public status page found (status.originhq.com does not resolve).

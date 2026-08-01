@@ -1,0 +1,32 @@
+generated: '2026-07-20'
+method: searched
+source: https://support.originhq.com/docs/origin-mcp-server
+docs: https://support.originhq.com/docs/origin-mcp-server
+note: >-
+  No public REST OpenAPI is published; the auth model below is captured from the hosted MCP
+  server docs and the live OAuth authorization-server / protected-resource metadata.
+summary:
+  types: [oauth2]
+  oauth2_flows: [authorizationCode, clientCredentials, deviceCode, refreshToken]
+  dynamic_client_registration: true
+  identity_provider: WorkOS AuthKit (Origin account)
+schemes:
+- name: OriginOAuth2
+  type: oauth2
+  profile: OAuth 2.1
+  issuer: https://auth-web.dashboard.originhq.com
+  authorization_endpoint: https://auth-web.dashboard.originhq.com/oauth2/authorize
+  token_endpoint: https://auth-web.dashboard.originhq.com/oauth2/token
+  device_authorization_endpoint: https://auth-web.dashboard.originhq.com/oauth2/device_authorization
+  introspection_endpoint: https://auth-web.dashboard.originhq.com/oauth2/introspection
+  userinfo_endpoint: https://auth-web.dashboard.originhq.com/oauth2/userinfo
+  jwks_uri: https://auth-web.dashboard.originhq.com/oauth2/jwks
+  grant_types_supported: [authorization_code, client_credentials, refresh_token, "urn:ietf:params:oauth:grant-type:device_code"]
+  response_types_supported: [code]
+  token_endpoint_auth_methods_supported: [none, client_secret_basic, client_secret_post]
+  id_token_signing_alg_values_supported: [RS256]
+  bearer_methods_supported: [header]
+  protected_resource: https://mcp.prod.originhq.com/mcp
+  sources:
+  - well-known/prelude-oauth-authorization-server.json
+  - well-known/prelude-oauth-protected-resource.json

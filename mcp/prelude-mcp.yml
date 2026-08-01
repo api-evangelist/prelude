@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: searched
+status: published
+source: https://support.originhq.com/docs/origin-mcp-server
+server:
+  name: origin
+  vendor: Origin (formerly Prelude Security)
+  transport: http
+  transport_detail: Streamable HTTP (POST /mcp), request body limit 256 KiB
+  url: https://mcp.prod.originhq.com/mcp
+  protocol_version: '2025-06-18'
+  protocol_fallback: true
+authentication:
+  type: oauth2
+  profile: OAuth 2.1 with Dynamic Client Registration
+  identity_provider: WorkOS AuthKit (Origin account sign-in)
+  authorization_server: https://auth-web.dashboard.originhq.com/
+  protected_resource_metadata: https://mcp.prod.originhq.com/.well-known/oauth-protected-resource
+  bearer_methods: [header]
+  note: No manual API key provisioning; access constrained to the caller's Origin dashboard role.
+tools:
+- name: analytics_describe_schema
+  description: Returns the complete analytics graph structure (entities, fields, metrics, join
+    relationships, query-language reference and examples) so the model can learn the data shape
+    before composing queries.
+  read_only: true
+- name: analytics_query
+  description: Executes structured, read-only queries against tenant observability data (entity
+    selection, joins, filters, dimensions, metrics, pagination, time ranges, sampling); returns
+    result rows with truncation flags and cost info (rows/bytes scanned, query duration).
+  read_only: true

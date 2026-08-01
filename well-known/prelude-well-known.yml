@@ -1,0 +1,39 @@
+generated: '2026-07-20'
+method: searched
+hosts:
+- host: https://mcp.prod.originhq.com
+  documents:
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    standard: RFC 9728 (OAuth 2.0 Protected Resource Metadata)
+    file: prelude-oauth-protected-resource.json
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 401
+- host: https://auth-web.dashboard.originhq.com
+  documents:
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    standard: RFC 8414 (OAuth 2.0 Authorization Server Metadata)
+    file: prelude-oauth-authorization-server.json
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: same metadata document served at both paths
+- host: https://www.originhq.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://www.preludesecurity.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: soft 200 - returns the SPA HTML redirect page, not a valid RFC 9116 security.txt
