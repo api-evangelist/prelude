@@ -16,16 +16,23 @@ authentication:
   identity_provider: WorkOS AuthKit (Origin account sign-in)
   authorization_server: https://auth-web.dashboard.originhq.com/
   protected_resource_metadata: https://mcp.prod.originhq.com/.well-known/oauth-protected-resource
-  bearer_methods: [header]
+  bearer_methods:
+  - header
   note: No manual API key provisioning; access constrained to the caller's Origin dashboard role.
 tools:
 - name: analytics_describe_schema
-  description: Returns the complete analytics graph structure (entities, fields, metrics, join
-    relationships, query-language reference and examples) so the model can learn the data shape
-    before composing queries.
+  description: Returns the complete analytics graph structure (entities, fields, metrics, join relationships,
+    query-language reference and examples) so the model can learn the data shape before composing queries.
   read_only: true
 - name: analytics_query
-  description: Executes structured, read-only queries against tenant observability data (entity
-    selection, joins, filters, dimensions, metrics, pagination, time ranges, sampling); returns
-    result rows with truncation flags and cost info (rows/bytes scanned, query duration).
+  description: Executes structured, read-only queries against tenant observability data (entity selection,
+    joins, filters, dimensions, metrics, pagination, time ranges, sampling); returns result rows with
+    truncation flags and cost info (rows/bytes scanned, query duration).
   read_only: true
+deployment:
+  mode: remote
+  endpoint: https://mcp.prod.originhq.com/mcp
+  verified: probed
+  probe: wall
+  checked: '2026-08-12'
+  source: catalog MCP census
